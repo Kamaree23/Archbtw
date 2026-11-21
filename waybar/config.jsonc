@@ -1,0 +1,19 @@
+[
+    {
+        "name": "gaming-bar",
+        "output": "HDMI-A-1",
+        // "layer": "overlay",
+        // "mode": "overlay", 
+	"layer": "top",
+        "mode": "dock",
+
+        "include": ["~/.config/waybar/base.jsonc"]
+    },
+    {
+        "name": "regular-bar",
+        "output": "DP-3",
+        "layer": "top",
+        "mode": "dock",
+        "include": ["~/.config/waybar/base.jsonc"]
+    }
+]
