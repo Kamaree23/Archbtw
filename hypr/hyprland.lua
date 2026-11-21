@@ -71,8 +71,9 @@ local menu = "rofi -show run"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function()
-	hl.exec_cmd("dev.ftb.ftb-app",{workspace = "4"})
+	hl.exec_cmd("dev.ftb.ftb-app",{workspace = "4 silent"})
 	hl.exec_cmd("ghostty",{workspace = "1 silent"})
+	hl.exec_cmd("steam",{workspace = "4 silent"})
 	hl.exec_cmd("nm-applet")
 	hl.exec_cmd("waybar & hyprpaper & brave & swaync")
 	hl.dispatch(hl.dsp.focus({ workspace = "1" }))
@@ -310,8 +311,10 @@ hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
-
--- Switch workspaces with mainMod + [0-9]
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({
+    action = "toggle",
+    mode = "fullscreen",
+}))-- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
 	local key = i % 10 -- 10 maps to key 0
