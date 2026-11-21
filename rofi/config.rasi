@@ -1,6 +1,12 @@
 configuration {
 /*	modes: "window,drun,run,ssh";*/
 font: "JetBrainsMono Nerd Font Propo";
+  modi: "drun,run,filebrowser,recursivebrowser";
+  recursivebrowser{
+    directory: "/home/hyprdex";
+    command: "xdg-open";
+  }
+  show-icons: true;
    /*	location: 0;*/
 /*	wayland-layer: "overlay";*/
 /*	yoffset: 0;*/
@@ -171,4 +177,5 @@ font: "JetBrainsMono Nerd Font Propo";
   }
 }
  @theme "transparent"
+
 
