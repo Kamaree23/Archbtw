@@ -59,7 +59,7 @@ hl.config({
 -- Set programs that you use
 local terminal = "ghostty"
 local fileManager = "dolphin"
-local menu = "rofi -show drun"
+local menu = "rofi -modi drun,run,filebrowser,recursivebrowser -show drun"
 
 -------------------
 ---- AUTOSTART ----

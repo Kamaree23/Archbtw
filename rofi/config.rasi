@@ -3,7 +3,7 @@ configuration {
 font: "JetBrainsMono Nerd Font Propo";
   modi: "drun,run,filebrowser,recursivebrowser";
   recursivebrowser{
-    directory: "/home/hyprdex";
+   directory: "/home/hyprdex/Downloads";
     command: "xdg-open";
   }
   show-icons: true;
